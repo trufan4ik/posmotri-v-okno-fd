@@ -160,6 +160,7 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
 }
@@ -170,6 +171,7 @@ ol {
   line-height: 100%;
   text-transform: uppercase;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 
@@ -251,7 +253,6 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
   border: 2px solid #1b1919;
   opacity: 1;
 }
@@ -302,8 +303,12 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link {
-  display: block;
+.more-button:hover {
+  text-decoration: underline;
+}
+
+.more-button:active {
+  background-color: #545050;
 }
 
 .content__card-link_current {
