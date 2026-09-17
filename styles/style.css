@@ -72,7 +72,7 @@ ol {
 
 .content__list-container {
   overflow-y: auto;
-  height: 534px;
+  height: 298px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -82,16 +82,20 @@ ol {
 
 .content__details {
   width: 100%;
-  height: 534px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   min-width: 0;
+  align-self: flex-start;
 }
 
 .title {
-  font-family: Oswald;
-  font-style: Bold;
+  font-family:
+    Oswald,
+    Arial Black,
+    Impact,
+    sans-serif;
+  font-weight: Bold;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -127,7 +131,11 @@ ol {
 }
 
 .content__list-item {
-  font-family: Fira Sans Condensed;
+  font-family:
+    Fira Sans Condensed,
+    Arial Narrow,
+    Helvetica Narrow,
+    sans-serif;
   font-size: 18px;
 }
 
@@ -141,7 +149,6 @@ ol {
   min-width: 194px;
   height: 103px;
   object-fit: cover;
-  object-position: center;
 }
 
 .content__video-card-description-container {
@@ -154,7 +161,11 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family:
+    Fira Sans Condensed,
+    Arial Narrow,
+    Helvetica Narrow,
+    sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -166,7 +177,11 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family:
+    Oswald,
+    Arial Black,
+    Impact,
+    sans-serif;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
@@ -272,8 +287,12 @@ ol {
 }
 
 .button {
-  font-family: Fira Sans Condensed;
-  font-style: Bold;
+  font-family:
+    Fira Sans Condensed,
+    Arial Narrow,
+    Helvetica Narrow,
+    sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
@@ -281,21 +300,21 @@ ol {
   color: #fff;
   background-color: transparent;
   cursor: pointer;
+  height: 34px;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
-  cursor: pointer;
 }
 
 .more-button {
   width: 100%;
-  cursor: pointer;
 }
 
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
 }
 
@@ -303,23 +322,19 @@ ol {
   background-color: #545050;
 }
 
-.more-button:hover {
-  text-decoration: underline;
-}
-
 .more-button:active {
   background-color: #545050;
 }
 
 .content__card-link_current {
-  background-color: transparent;
-}
-
-.content__list-item:active {
   background-color: #545050;
 }
 
-.content__list-item:hover {
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
   text-decoration: underline;
 }
 
